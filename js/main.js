@@ -1,5 +1,6 @@
 //Stampare a schermo un messaggio all’interno di un h1, utilizzando i data.
 //Bonus: Aggiungere alla pagina un’immagine, presa anch’essa da un data.
+Vue.config.devtools = true;
 var app = new Vue({
     el: '#root',
     data: {
@@ -15,11 +16,11 @@ var app = new Vue({
             if (this.image === 'img/msi_1.jfif'){
                 this.image = 'img/msi_2.jfif'
             } else if (this.image === 'img/msi_2.jfif'){
-            this.image = 'img/msi_3.jfif';
-            this.products = 'Prodotti!'
+                this.image = 'img/msi_3.jfif';
+                this.products = 'Prodotti'
             } else if (this.image === 'img/img/msi_3.jfif'){
-            this.image = 'img/msi_1.jfif';
-            this.products = 'Prodotti!'
+                this.image = 'img/msi_1.jfif';
+                this.products = 'Prodotti'
             }
         }
     }
